@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Inter, Helvetica, sans-serif;
+}
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Hero Section Css */
+.what_app_btn {
+  padding: 10px 20px;
+  display: inline-flex;
+}
+@media screen and (max-width: 575px) {
+  .hero_section h2 {
+    font-size: 24px !important;
+  }
+  .full_width {
+    width: 100%;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+  .hero_contant {
+    text-align: center;
+  }
+  .hero_img img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Featured Projects Css */
+.featured_box {
+  padding: 50px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48%;
+  margin: 10px;
+  overflow: hidden;
+}
+.featured_box h2 {
+  padding-top: 80px;
+}
+@media screen and (max-width: 575px) {
+  .featured_project_contant {
+    padding: 0px 10px;
+  }
+  .featured_box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .featured_project_outer {
+    margin: 0;
+    padding: 10px;
+  }
+  .featured_project_contant h2 {
+    font-size: 26px;
+  }
+  .featured_box {
+    font-size: 26px;
+  }
+}
+
+/* Services Provide Section */
+.services_provide_box {
+  width: 23%;
+}
+.provide_h2 {
+  height: 80px;
+  font-size: 46px;
+  width: 80px;
+}
+@media screen and (max-width: 575px) {
+  .services_provide_section h2 {
+    font-size: 26px;
+  }
+  .services_provide_contant {
+    padding: 0px 10px;
+  }
+  .services_provide_box {
+    width: 45%;
+  }
+  .services_provide_outer {
+    margin: 0;
+    padding: 10px;
+    gap: 0.5rem !important;
+  }
+  .services_provide_box p {
+    font-size: 16px !important;
+  }
+}
+/* why_work_with_section */
+.why_work_with_section {
+  background-image: url("/why_work_with_section.jpg");
+}
+.blanck_div_work {
+  height: 70px !important;
+  max-width: 70px !important;
+  width: 20% !important;
+}
+.why_work_box_outer {
+  width: 100%;
+}
+.why_work_with_inner
+{
+  width: 60%;
+}
+.why_work_with_img
+{
+  width: 40%;
+}
+@media screen and (max-width: 575px) {
+  .why_work_with_section h2 {
+    font-size: 26px;
+  }
+  .why_work_with_contant {
+    padding: 0px 10px;
+  }
+  .why_work_box_outer {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .why_work_with_inner {
+    margin: 0;
+    padding: 0px 10px;
+  }
+  .blanck_div_work {
+    height: 50px !important;
+    max-width: 50px !important;
+  }
+  .blanck_div_work_img img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .why_work_with_inner
+{
+  width: 100%;
+}
+.why_work_with_img
+{
+  width: 100%;
+}
+}
